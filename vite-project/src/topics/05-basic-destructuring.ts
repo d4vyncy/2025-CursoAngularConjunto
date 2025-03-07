@@ -35,4 +35,14 @@ const {song:anotherSong,songDuration:duracion
 // console.log('songDuration: ', audioPlayer.songDuration);
 // console.log('author: ', audioPlayer.details.author);
 
+// const dbz: string[]=['Goku','Vegeta','Trunk'];
+//console.log('Persona 3:',dbz[3] || 'no eixste el personaje');
+
+
+const [p1,p2,trunks]: string[]=['Goku','Vegeta','Trunk'];
+console.log('Persona 3:',trunks || 'no eixste el personaje');
+console.log('Persona 2:',p2 || 'no eixste el personaje');
+
+
+
 export {};

@@ -6,4 +6,5 @@ export const routes: Routes = [
 
     {path:'',component:CounterPageComponent},
     {path:'hero',component:HeroPageComponent},
+    {path:'**',redirectTo:''},
 ];

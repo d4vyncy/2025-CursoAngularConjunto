@@ -12,13 +12,20 @@
         (input)="name.set(txtName.value)"
         #txtName
         >
-        <input type="number" class="form-control mt-2" placeholder="Poder">
-        <button class="mt-6 btn btn-primary">Agregar</button>
-    </div>
 
+        <h3>{{power()}}</h3>
+
+        <input type="number" class="form-control mt-2" 
+        placeholder="Poder"
+        [value]="power()"        
+        (input)="power.set(+txtPower.value)"
+        #txtPower
+        >
+        <button (click)="addCharacter()" class="mt-6 btn btn-primary">Agregar</button>
+    </div>
     <div class="col-12 col-sm-6">
         <h3>Listado</h3>
-        <ul>
+        <ul>    
             @for(character of characters(); track character.id; let idx =$index){
             @if(character.power>500)
             {
